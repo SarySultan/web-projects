@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #9349dc;
+    --secondary-color: #a988e8;
+    --card-background-color: #f8f9fa;
+    --background-color: #a6aacae8;
+    --google-color: #ea4335;
+    --facebook-color: #3b5998;
+    --google-hover-color: #d93025;
+    --facebook-hover-color: #2d4373;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.form-container {
+    background-color: var(--card-background-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+#other-login {
+    color: #968e94;
+    font-size: small;
+}
+
+.other-login {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.google-button,
+.facebook-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    width: 48%;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.google-button img,
+.facebook-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.google-button {
+    border: 1px solid var(--google-color);
+    color: var(--google-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.google-button:hover {
+    background-color: var(--google-hover-color);
+    color: white;
+    
+}
+
+.facebook-button {
+    border: 1px solid var(--facebook-color);
+    color: var(--facebook-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.facebook-button:hover {
+    background-color: var(--facebook-hover-color);
+    color: white;
+}
